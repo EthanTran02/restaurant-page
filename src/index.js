@@ -1,9 +1,12 @@
 import './style.css'
-import Initialize from './module/initialize'
-import Menu from './module/menu'
+import Initialize from './modules/initialize'
+import Menu from './modules/menu'
+import About from './modules/about'
 
 const home = document.getElementById('home')
 const menu = document.getElementById('menu')
+const about = document.getElementById('about')
+
 const content = document.getElementById('content')
 const button = document.querySelectorAll('button')
 
@@ -24,6 +27,15 @@ menu.addEventListener('click', () => {
     }) 
     content.innerHTML = ''
     Menu()
+})
+
+about.addEventListener('click', () => {
+    button.forEach(button => {
+        button.style.backgroundColor = 'white'
+        button.style.color = 'black'
+    }) 
+    content.innerHTML = ''
+    About()
 })
 
 Initialize()

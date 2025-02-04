@@ -6,6 +6,10 @@ export default function Initialize() {
     const description = document.createElement('p')
     const body = document.getElementById('content')
     const button = document.getElementById('home')
+    const content = document.getElementById('content')
+
+    content.style.backgroundImage = ''
+    content.style.pading = ''
 
     // ---------STYLE---------
 
@@ -33,7 +37,7 @@ export default function Initialize() {
     backGround.style.height = '100vh'
     backGround.style.backgroundSize = 'cover'
     backGround.style.backgroundPosition = 'center'
-    backGround.style.padding = '60px'
+    backGround.style.padding = '80px'
 
     // append child 
     backGround.appendChild(Heading)

@@ -12,6 +12,9 @@ export default function Menu() {
     const menuItem2 = document.createElement('div')
     const menuItem3 = document.createElement('div')
 
+    // RESET BACKGROUND
+    content.style.backgroundImage = ''
+    content.style.padding = ''
     // ---------STYLE---------
 
     // Nav
@@ -22,7 +25,7 @@ export default function Menu() {
     Heading.innerText = 'Our Menu'
     description.innerText = "We're delighted to offer you a delicious selection of dishes, crafted with fresh, high-quality ingredients and a passion for flavor. Whether you're looking for a casual meal, a romantic dinner, or a quick bite, we have something to satisfy every craving."
     Heading.style.textAlign = 'center'
-    Heading.style.marginTop = '60px'
+    Heading.style.marginTop = '80px'
     description.style.textAlign = 'center'
     description.style.width = '50vw'
     description.style.margin = 'auto'
@@ -45,14 +48,14 @@ export default function Menu() {
 
     menuItem2.style.flex = '1'
     menuItem2.style.height = '100%'
-    menuItem1.style.borderRadius = '5px'
+    menuItem2.style.borderRadius = '5px'
     menuItem2.style.backgroundImage = `url(${food2})`
     menuItem2.style.backgroundSize = 'cover'
     menuItem2.style.backgroundPosition = 'bottom'
     
     menuItem3.style.flex = '1'
     menuItem3.style.height = '100%'
-    menuItem1.style.borderRadius = '5px'
+    menuItem3.style.borderRadius = '5px'
     menuItem3.style.backgroundImage = `url(${food3})`
     menuItem3.style.backgroundSize = 'cover'
     menuItem3.style.backgroundPosition = 'bottom'
