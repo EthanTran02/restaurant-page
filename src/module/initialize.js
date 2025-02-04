@@ -5,13 +5,18 @@ export default function Initialize() {
     const Heading = document.createElement('h1')
     const description = document.createElement('p')
     const body = document.getElementById('content')
+    const button = document.getElementById('home')
 
+    // ---------STYLE---------
 
-    // style
+    // Nav
+    button.style.backgroundColor = 'black'
+    button.style.color = 'white'
+
+    // text
     Heading.innerText = 'The Gilded Table'
     description.innerText = 'At Trattoria Bella, we believe that food is best enjoyed with family and friends. Our family recipes, passed down through generations, are the heart and soul of our menu. From our rich and flavorful pasta sauces to our perfectly charred pizzas, every dish is made with love and a commitment to authentic Italian flavors. Come gather around our table and experience the warmth of Italian hospitality at Trattoria Bella.'
 
-    // text
     Heading.style.textAlign = 'center'
     description.style.margin = 'auto'
     description.style.textAlign = 'center'
@@ -28,7 +33,7 @@ export default function Initialize() {
     backGround.style.height = '100vh'
     backGround.style.backgroundSize = 'cover'
     backGround.style.backgroundPosition = 'center'
-    backGround.style.padding = '42px'
+    backGround.style.padding = '60px'
 
     // append child 
     backGround.appendChild(Heading)
