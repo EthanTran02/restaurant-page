@@ -5,7 +5,8 @@ export default function About() {
     const heading = document.createElement('h1')
     const description = document.createElement('p')
     const content = document.getElementById('content')
-    
+
+    // RESET BACKGROUND
     content.style.backgroundImage = ''
     content.style.padding = ''
     // --------STYLE--------

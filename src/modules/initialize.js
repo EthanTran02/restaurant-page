@@ -8,6 +8,7 @@ export default function Initialize() {
     const button = document.getElementById('home')
     const content = document.getElementById('content')
 
+    // RESET BACKGROUND
     content.style.backgroundImage = ''
     content.style.pading = ''
 
