@@ -2,7 +2,6 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: "development",
   entry: './src/index.js',
   output: {
     filename: 'main.js',
@@ -24,12 +23,5 @@ module.exports = {
         type: 'asset/resource',
       },
     ],
-  },
-  devServer: {
-    static: {
-      directory: path.join(__dirname, 'dist'), // Serve files from 'dist'
-    },
-    compress: true,
-    port: 9000, // Optional: Change port if needed
   },
 };
